@@ -38,6 +38,7 @@ window.SITE_CONFIG = {
     show_dates: "",
     booth_number: "",
     sermon_link: "",
+    product_link: "",
     notes: ""
   }
 };
