@@ -251,12 +251,18 @@ h1 em, h2 em { font-style: italic; font-weight: 480; }
 .site-nav .nav-cta:hover { background: #000; text-decoration: none; }
 .site-nav .nav-cta[aria-current="page"] { text-decoration: none; }
 
-@media (max-width: 559px) {
+@media (max-width: 759px) {
   .site-header .wrap { flex-wrap: wrap; padding-top: 12px; padding-bottom: 10px; row-gap: 6px; }
   .site-nav { width: 100%; }
-  .site-nav ul { gap: 2px; }
+  .site-nav ul { gap: 0; }
+  .site-nav a { padding: 8px 8px; }
   .site-nav li:first-child a { padding-left: 0; }
   .site-nav li:last-child { margin-left: auto; }
+}
+@media (max-width: 419px) {
+  .site-nav a { font-size: 14.5px; padding: 8px 6px; }
+  .site-nav .nav-cta { padding: 9px 12px; }
+  .cta-more { display: none; }
 }
 
 /* Buttons */
@@ -634,7 +640,8 @@ a.ticket:focus-visible { outline-offset: 6px; }
 
 fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 
-.choice-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.choice-row { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 560px) { .choice-row { grid-template-columns: repeat(3, 1fr); } }
 .choice input { position: absolute; opacity: 0; }
 .choice span {
   display: block;
@@ -650,12 +657,12 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 .choice input:checked + span::before { content: "\25CF  "; color: var(--red); }
 .choice input:focus-visible + span { outline: 3px solid var(--red); outline-offset: 2px; }
 
-.booth-fields {
+.booth-fields, .sunday-fields {
   border-top: 1.5px dashed var(--rule);
   padding-top: 22px;
   margin-top: 4px;
 }
-.booth-fields legend { font: 500 12.5px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 14px; }
+.booth-fields legend, .sunday-fields legend { font: 500 12.5px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 14px; }
 .booth-fields .row { display: grid; gap: 0 14px; }
 @media (min-width: 560px) { .booth-fields .row { grid-template-columns: 1fr 1fr; } }
 
@@ -743,3 +750,86 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 @media (max-width: 899px) {
   .hero-table:not(:has(.stamp)) { aspect-ratio: 1 / .8; }
 }
+
+/* Phase 2 */
+
+.free-note {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 28px;
+  max-width: 34em;
+  padding: 16px 18px;
+  border: 1.5px dashed var(--red);
+  border-radius: 3px;
+  background: var(--paper-light);
+  font-weight: 500;
+}
+.free-note .mark {
+  flex: none;
+  font: 600 11.5px/1 var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 6px 8px;
+  border-radius: 2px;
+  transform: rotate(-4deg);
+  margin-top: 1px;
+}
+
+.price small { display: block; font: 400 .875rem/1.4 var(--mono); color: var(--ink-soft); }
+.price-alt { font: 500 13px/1.4 var(--mono); color: var(--ink); margin: -6px 0 14px; letter-spacing: .02em; }
+
+.addon {
+  display: grid;
+  gap: 24px 40px;
+  align-items: center;
+  padding: 36px 28px;
+  background: var(--paper-light);
+  border: 1px solid var(--rule);
+  border-left: 6px solid var(--green);
+}
+@media (min-width: 900px) { .addon { grid-template-columns: 1fr auto; padding: 44px 48px; } }
+.addon h2 { font-size: clamp(1.8rem, 1.4rem + 1.4vw, 2.5rem); margin-bottom: 12px; }
+.addon p { color: var(--ink-soft); max-width: 36em; }
+.addon .actions { margin-top: 0; }
+
+.spread .s6 { grid-column: 1 / -1; }
+.credit {
+  margin-top: 28px;
+  font: 400 12.5px/1.6 var(--mono);
+  letter-spacing: .02em;
+  color: var(--ink-soft);
+  max-width: 62em;
+}
+.credit a { color: var(--ink); }
+
+@media (min-width: 760px) {
+  .spread .middle4 { grid-column: 2 / span 4; }
+}
+@media (max-width: 759px) {
+  .spread .s1.pair { grid-column: span 3; }
+}
+
+/* A printed page on the table, for text pieces such as the discussion guide. */
+.sheet {
+  background: #FFFFFF;
+  padding: 26px 24px 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2B2925;
+}
+.sheet .sheet-head {
+  font: 500 11px/1.3 var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
+}
+.sheet h3 { font-size: 1.35rem; margin-bottom: 12px; }
+.sheet ol { margin: 0; padding-left: 1.2em; }
+.sheet li { margin-bottom: 8px; }
+.sheet li::marker { color: var(--red); font-family: var(--mono); font-size: 12px; }

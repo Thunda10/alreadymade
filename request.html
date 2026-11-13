@@ -24,7 +24,8 @@
         <ul>
           <li><a href="ad-pack.html">Ad Pack</a></li>
           <li><a href="booth-kit.html">Booth Kit</a></li>
-          <li><a class="nav-cta" href="request.html" aria-current="page">Request yours</a></li>
+          <li><a href="sunday-pack.html">Sunday Pack</a></li>
+          <li><a class="nav-cta" href="request.html" aria-current="page">Request<span class="cta-more"> yours</span></a></li>
         </ul>
       </nav>
     </div>
@@ -39,7 +40,7 @@
           <p class="lede">Tell us your site. We build the pack from what you already publish and send you a private preview. If you do not want it, do nothing.</p>
           <ul class="ruled request-points" role="list">
             <li><span class="n" aria-hidden="true">01</span><span>Private preview within 2 business days.</span></li>
-            <li><span class="n" aria-hidden="true">02</span><span>Ad Pack $149, Booth Kit $199, only if you want it.</span></li>
+            <li><span class="n" aria-hidden="true">02</span><span>Ad Pack $149, Booth Kit $199, Sunday Pack $149 a month, only if you want it.</span></li>
             <li><span class="n" aria-hidden="true">03</span><span>Previews are deleted after 21 days.</span></li>
           </ul>
         </div>
@@ -53,12 +54,12 @@
                 <noscript><p class="form-status">This form needs JavaScript turned on to send.</p></noscript>
                 <div class="field">
                   <label for="website">Company website</label>
-                  <input type="text" id="website" name="website" inputmode="url" autocomplete="url" placeholder="yourstore.com" required>
+                  <input type="text" id="website" name="website" inputmode="url" autocomplete="url" placeholder="yoursite.com" required>
                 </div>
 
                 <div class="field">
                   <label for="email">Work email</label>
-                  <input type="email" id="email" name="email" autocomplete="email" placeholder="you@yourstore.com" required>
+                  <input type="email" id="email" name="email" autocomplete="email" placeholder="you@yoursite.com" required>
                 </div>
 
                 <fieldset class="field">
@@ -66,6 +67,7 @@
                   <div class="choice-row">
                     <label class="choice"><input type="radio" name="product" value="ad-pack" checked><span>Ad Pack<small>$149</small></span></label>
                     <label class="choice"><input type="radio" name="product" value="booth-kit"><span>Booth Kit<small>$199</small></span></label>
+                    <label class="choice"><input type="radio" name="product" value="sunday-pack"><span>Sunday Pack<small>$149 a month</small></span></label>
                   </div>
                   <p class="mono plan-note" id="plan-note" hidden></p>
                   <input type="hidden" name="plan" value="">
@@ -89,6 +91,14 @@
                   </div>
                 </fieldset>
 
+                <fieldset class="sunday-fields" id="sunday-fields" hidden disabled>
+                  <legend>For a Sunday Pack</legend>
+                  <div class="field">
+                    <label for="sermon_link">Podcast feed or sermon page link</label>
+                    <input type="text" id="sermon_link" name="sermon_link" inputmode="url" placeholder="yourchurch.org/sermons" required>
+                  </div>
+                </fieldset>
+
                 <div class="field">
                   <label for="notes">Anything we should know <span class="hint">optional</span></label>
                   <textarea id="notes" name="notes" rows="4"></textarea>
@@ -102,7 +112,7 @@
                 <div class="form-foot">
                   <button class="btn primary" type="submit">Request my preview</button>
                   <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
-                  <p>We will email your private preview within 2 business days. One message, one follow-up, then we stop.</p>
+                  <p>We will email your private preview within 2 business days. one message, one follow up, then we stop.</p>
                 </div>
               </form>
 
@@ -123,7 +133,7 @@
                   </g>
                 </svg>
                 <h2>Thank you.</h2>
-                <p>We will email your private preview within 2 business days. One message, one follow-up, then we stop.</p>
+                <p>We will email your private preview within 2 business days. one message, one follow up, then we stop.</p>
                 <p><a class="text-link" href="./">Back to the studio</a></p>
               </div>
 
@@ -142,6 +152,7 @@
         <ul>
           <li><a href="ad-pack.html">Ad Pack</a></li>
           <li><a href="booth-kit.html">Booth Kit</a></li>
+          <li><a href="sunday-pack.html">Sunday Pack</a></li>
           <li><a href="request.html">Request yours</a></li>
           <li><a href="legal/terms.html">Terms</a></li>
           <li><a href="legal/privacy.html">Privacy</a></li>

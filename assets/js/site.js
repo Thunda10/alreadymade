@@ -34,17 +34,22 @@
   var form = document.getElementById("request-form");
   if (!form) return;
 
-  var PRODUCTS = { "ad-pack": "Ad Pack", "booth-kit": "Booth Kit" };
+  var PRODUCTS = { "ad-pack": "Ad Pack", "booth-kit": "Booth Kit", "sunday-pack": "Sunday Pack" };
   var PLANS = {
     "one": "One pack",
     "monthly": "Monthly",
     "weekly": "Weekly",
-    "reskin": "Next show re-skin"
+    "reskin": "Next show re-skin",
+    "addon": "Added to an Ad Pack",
+    "yearly": "Yearly"
   };
 
   var status = document.getElementById("form-status");
   var submit = form.querySelector("[type=submit]");
-  var boothFields = document.getElementById("booth-fields");
+  var extraFields = {
+    "booth-kit": document.getElementById("booth-fields"),
+    "sunday-pack": document.getElementById("sunday-fields")
+  };
   var planInput = form.elements.plan;
   var planNote = document.getElementById("plan-note");
 
@@ -65,19 +70,23 @@
     return checked ? checked.value : "";
   }
 
-  function syncBoothFields() {
-    var isBooth = selectedProduct() === "booth-kit";
-    boothFields.hidden = !isBooth;
-    boothFields.disabled = !isBooth;
+  // Show only the extra fields that belong to the chosen product.
+  function syncFields() {
+    var product = selectedProduct();
+    Object.keys(extraFields).forEach(function (key) {
+      var on = key === product;
+      extraFields[key].hidden = !on;
+      extraFields[key].disabled = !on;
+    });
   }
   form.addEventListener("change", function (event) {
     if (event.target.name !== "product") return;
-    syncBoothFields();
+    syncFields();
     // A plan only belongs to the product it was picked for.
     planInput.value = "";
     planNote.hidden = true;
   });
-  syncBoothFields();
+  syncFields();
 
   var action = setting("REQUEST_FORM_ACTION");
   var mode = action ? "post" : email ? "mailto" : "closed";
@@ -95,7 +104,7 @@
 
   function collect() {
     var data = {};
-    ["website", "email", "product", "plan", "show_name", "show_dates", "booth_number", "notes"].forEach(function (name) {
+    ["website", "email", "product", "plan", "show_name", "show_dates", "booth_number", "sermon_link", "notes"].forEach(function (name) {
       var field = form.elements[name];
       if (!field || field.disabled) return;
       var value = name === "product" ? selectedProduct() : field.value.trim();
@@ -133,7 +142,7 @@
   }
 
   function mailtoLink(data) {
-    var product = PRODUCTS[data.product] || "Ad Pack or Booth Kit";
+    var product = PRODUCTS[data.product] || "a pack";
     var lines = [
       "Website: " + data.website,
       "Work email: " + data.email,
@@ -142,6 +151,7 @@
     if (data.show_name) lines.push("Show name: " + data.show_name);
     if (data.show_dates) lines.push("Show dates: " + data.show_dates);
     if (data.booth_number) lines.push("Booth number: " + data.booth_number);
+    if (data.sermon_link) lines.push("Podcast feed or sermon page: " + data.sermon_link);
     if (data.notes) lines.push("", "Notes:", data.notes);
     var subject = "Request: " + product + " for " + data.website;
     return "mailto:" + email + "?subject=" + encodeURIComponent(subject) +
