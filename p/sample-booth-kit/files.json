@@ -1,0 +1,77 @@
+{
+ "page": "p/sample-booth-kit/index.html",
+ "files": [
+  {
+   "file": "logo.png",
+   "type": "logo",
+   "width": 682,
+   "height": 192
+  },
+  {
+   "file": "loop-1920x1080-preview.mp4",
+   "type": "loop",
+   "width": 960,
+   "height": 540,
+   "codec": "h264",
+   "seconds": 36.0,
+   "fps": 30.0
+  },
+  {
+   "file": "loop-1920x1080-preview-poster.jpg",
+   "type": "poster",
+   "width": 960,
+   "height": 540
+  },
+  {
+   "file": "booth-1080x1080-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 720
+  },
+  {
+   "file": "booth-1080x1920-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 1280
+  },
+  {
+   "file": "booth-1200x627-free.png",
+   "type": "image",
+   "width": 1200,
+   "height": 627
+  },
+  {
+   "file": "booth-1600x900-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 405
+  },
+  {
+   "file": "loop-1080x1920-preview.mp4",
+   "type": "loop",
+   "width": 960,
+   "height": 1706,
+   "codec": "h264",
+   "seconds": 36.0,
+   "fps": 30.0
+  },
+  {
+   "file": "loop-1080x1920-preview-poster.jpg",
+   "type": "poster",
+   "width": 960,
+   "height": 1706
+  },
+  {
+   "file": "email-banner-1200x300-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 180
+  },
+  {
+   "file": "product-sheet-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 932
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "page": "p/sample-catalog-pack/index.html",
+ "files": [
+  {
+   "file": "logo.png",
+   "type": "logo",
+   "width": 697,
+   "height": 126
+  },
+  {
+   "file": "catalog-01-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 932
+  },
+  {
+   "file": "catalog-02-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 932
+  },
+  {
+   "file": "catalog-03-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 932
+  },
+  {
+   "file": "catalog-04-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 932
+  }
+ ]
+}

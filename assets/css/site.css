@@ -254,8 +254,8 @@ h1 em, h2 em { font-style: italic; font-weight: 480; }
 @media (max-width: 759px) {
   .site-header .wrap { flex-wrap: wrap; padding-top: 12px; padding-bottom: 10px; row-gap: 6px; }
   .site-nav { width: 100%; }
-  .site-nav ul { gap: 0; }
-  .site-nav a { padding: 8px 8px; }
+  .site-nav ul { gap: 0; flex-wrap: wrap; row-gap: 4px; }
+  .site-nav a { padding: 8px 8px; white-space: nowrap; }
   .site-nav li:first-child a { padding-left: 0; }
   .site-nav li:last-child { margin-left: auto; }
 }
@@ -358,6 +358,8 @@ h1 em, h2 em { font-style: italic; font-weight: 480; }
 .hero-table .print-b { width: 46%; right: 2%; top: 14%; --r: 4deg; }
 .hero-table .print-c { width: 28%; left: 34%; top: 40%; --r: -1.5deg; z-index: 2; }
 .hero-table .stamp { position: absolute; width: 74%; left: 13%; bottom: 2%; z-index: 3; }
+/* On a phone the stamp would sit on the sample cards, so it is left out below 600 px. */
+@media (max-width: 599px) { .hero-table .stamp { display: none; } }
 @media (min-width: 900px) {
   .hero-table .print-a { top: 2%; }
   .hero-table .print-c { top: 38%; }
@@ -397,7 +399,7 @@ h1 em, h2 em { font-style: italic; font-weight: 480; }
   text-transform: uppercase;
   color: var(--ink-soft);
 }
-.ticket-stub .num { color: var(--ink); }
+.ticket-stub .num { color: var(--ink); white-space: nowrap; }
 .ticket-stub .step {
   font: 500 30px/1 var(--serif);
   letter-spacing: -.02em;
@@ -423,6 +425,8 @@ a.ticket:focus-visible { outline-offset: 6px; }
 @media (min-width: 760px) {
   .tickets.three { grid-template-columns: repeat(3, 1fr); }
   .tickets.two { grid-template-columns: repeat(2, 1fr); }
+  /* Room for a stub label on two lines, so the headings in a row of three line up. */
+  .tickets.three .ticket-stub { min-height: calc(2 * 1.4 * 12.5px + 16px); }
 }
 
 /* Price on tickets */

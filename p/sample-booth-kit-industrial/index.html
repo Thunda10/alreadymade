@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Booth Kit preview for Lantern Coffee Roasters</title>
+<style>
+@font-face{font-family:'Fraunces';src:url('fonts/fraunces-latin-ext-italic-100-900.woff2') format('woff2');font-weight:100 900;font-style:italic;unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Fraunces';src:url('fonts/fraunces-latin-italic-100-900.woff2') format('woff2');font-weight:100 900;font-style:italic;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Fraunces';src:url('fonts/fraunces-latin-ext-normal-100-900.woff2') format('woff2');font-weight:100 900;font-style:normal;unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Fraunces';src:url('fonts/fraunces-latin-normal-100-900.woff2') format('woff2');font-weight:100 900;font-style:normal;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-ext-italic-100-900.woff2') format('woff2');font-weight:100 900;font-style:italic;unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-italic-100-900.woff2') format('woff2');font-weight:100 900;font-style:italic;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-ext-normal-100-900.woff2') format('woff2');font-weight:100 900;font-style:normal;unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Inter';src:url('fonts/inter-latin-normal-100-900.woff2') format('woff2');font-weight:100 900;font-style:normal;unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+:root{--bg:#231A15;--ink:#F3F3F1;--muted:#B9B6B3;--accent:#C8572B;--accent-ink:#090909;--rule:#48413D;--surface:#322A25}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 'Inter',system-ui,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:48px 28px 80px}
+h1,h2{font-family:'Fraunces',serif;line-height:1.1;letter-spacing:-0.01em;margin:0}
+h1{font-size:clamp(30px,4.6vw,52px);max-width:17em;margin:28px 0 12px}
+h2{font-size:28px;margin:56px 0 16px}
+.lede{color:var(--muted);font-size:19px;margin:0 0 10px;max-width:46em}
+.logo{max-height:64px;max-width:280px;display:block}
+.logo-chip{display:inline-block;background:#F3F3F1;padding:14px 18px}
+.buybox{display:grid;grid-template-columns:minmax(260px,1fr) 1.4fr;gap:28px;margin-top:28px;align-items:start}
+.buybox h2{margin:0 0 8px;font-size:24px}
+.price{background:var(--surface);padding:24px;border:1px solid var(--rule)}
+.price strong{display:block;font-family:'Fraunces',serif;font-size:44px;line-height:1;margin-bottom:16px}
+.buy{display:block;text-align:center;background:var(--accent);color:var(--accent-ink);padding:16px 20px;font-weight:700;text-decoration:none;font-size:18px}
+.small{font-size:15px;margin:12px 0 0;color:var(--muted)}
+.inc ul{padding-left:20px;margin:0} .inc li{margin:5px 0}
+video{width:100%;display:block;background:#000;margin-top:40px}
+video.port{max-width:420px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.findus{margin-top:22px}
+figure{margin:0} figure img{width:100%;display:block;border:1px solid var(--rule)}
+figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+figure.free{grid-column:1/-1} figure.free figcaption{font-size:16px;color:var(--ink);font-weight:600}
+.dl{display:inline-block;margin-top:10px;border:2px solid var(--ink);color:var(--ink);padding:10px 18px;font-weight:700;text-decoration:none}
+ul.prods{list-style:none;padding:0;margin:0} ul.prods li{border-top:1px solid var(--rule);padding:10px 0}
+.src{display:block;font-size:14px;color:var(--muted);overflow-wrap:anywhere}
+ul.cred{padding-left:20px;font-size:14px;color:var(--muted)} ul.cred a{color:var(--ink)}
+details{border-top:1px solid var(--rule);padding:14px 0} summary{cursor:pointer;font-weight:600}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--ink)}
+@media (max-width:700px){main{padding:28px 18px 64px} .buybox{grid-template-columns:1fr;gap:18px} h2{margin-top:44px} .lede{font-size:17px}}
+</style></head>
+<body><main>
+<span class="logo-chip"><img class="logo" src="logo.png" alt="Lantern Coffee Roasters"></span>
+<h1>Your booth kit for Sample Expo 2027 is already made.</h1>
+<p class="lede">Built for Lantern Coffee Roasters, Booth 1427, March 9 to 11, 2027, Chicago. Everything below is a watermarked preview.</p>
+<p class="lede" id="made-up">Lantern Coffee Roasters, Sample Expo 2027 and the products, facts and web addresses on this page are made up to show the format.</p>
+<p class="lede" id="sample-frame">This is a sample of the page a company receives. It is written to that company, so 'you' means them.</p>
+<section class="buybox" id="buy-box">
+<div class="price"><strong>$199</strong>
+<a class="buy" href="../../request.html?product=booth-kit">Request yours</a>
+<p class="small">The files arrive within 24 hours of purchase.</p><p class="small">This is a sample page, so the button opens our request form with the Booth Kit already chosen.</p><p class="small">If you also buy an Ad Pack, you can add this kit to it for $99 instead of $199.</p></div>
+<div class="inc" id="included"><h2>What is included</h2><ul><li>A 36 second silent booth loop for the TV, in landscape 1920x1080 and portrait 1080x1920.</li><li>Four graphics that say where to find you at Booth 1427, sized for LinkedIn, Instagram, stories and X.</li><li>An email signature banner for your team.</li><li>A one page product sheet for US Letter. Treat it as a draft and check every name and number before you print.</li></ul></div>
+</section>
+<video class="land" src="loop-1920x1080-preview.mp4" poster="loop-1920x1080-preview-poster.jpg" autoplay muted loop playsinline controls></video><div class="grid findus"><figure><img src="booth-1080x1080-preview.jpg" alt="" loading="lazy"><figcaption>Find us graphic for Instagram post, 1080x1080</figcaption></figure><figure><img src="booth-1080x1920-preview.jpg" alt="" loading="lazy"><figcaption>Find us graphic for story, 1080x1920</figcaption></figure><figure class="free"><img src="booth-1200x627-free.png" alt="Find us graphic for LinkedIn, 1200x627"><figcaption>Find us graphic for LinkedIn, 1200x627. This one is yours to use, free.</figcaption><a class="dl" href="booth-1200x627-free.png" download>Download the LinkedIn graphic</a></figure><figure><img src="booth-1600x900-preview.jpg" alt="" loading="lazy"><figcaption>Find us graphic for X, 1600x900</figcaption></figure></div><video class="port" src="loop-1080x1920-preview.mp4" poster="loop-1080x1920-preview-poster.jpg" autoplay muted loop playsinline controls></video>
+<h2>How to play the loop</h2><p id="loop-facts">The loop is a 1920x1080 MP4 file (H.264 video), 36 seconds long, at 30 frames per second, with no sound. The portrait version is 1080x1920, also 36 seconds. To play it on repeat on a booth TV, copy the file to a USB stick, plug the stick into the TV, open the file from the TV&#x27;s media player and turn on repeat (often called Repeat One or Loop). If the TV has no repeat setting, play it from a laptop set to repeat. The last frame leads straight back into the first, so the repeat has no visible jump.</p>
+<h2>Product sheet and banner</h2><div class="grid"><figure><img src="email-banner-1200x300-preview.jpg" alt="" loading="lazy"><figcaption>Email signature banner</figcaption></figure><figure><img src="product-sheet-preview.jpg" alt="" loading="lazy"><figcaption>Product sheet, page preview</figcaption></figure></div>
+<h2>Products in this kit</h2><p>Each product's name, price and words come from the page of your own site listed under it.</p><ul class="prods"><li><strong>Harbor House Blend</strong><span class="src">Words from: /coffee/harbor-house</span></li><li><strong>Guji Single Origin</strong><span class="src">Words from: /coffee/guji</span></li><li><strong>Cold Brew Concentrate</strong><span class="src">Words from: /coffee/cold-brew</span></li></ul><p>Tell us which products you're bringing and we rebuild the kit around them before you pay.</p>
+<h2>Why you got this</h2><p id="why">We found booth 1427 on Sample Expo 2027&#x27;s public exhibitor list. We made this kit from your own website before writing to you, so you could judge the work instead of a pitch. We aren&#x27;t connected to the show.</p>
+<h2>About this page</h2><p id="about-sample">This is a public sample page. A real preview page is unlisted: only people with the link can open it, and we send the link only to the company it was made for. A real page also shows the date we delete it and how to have it deleted sooner.</p>
+<h2>Questions</h2>
+<details><summary>What do I get when I buy?</summary><p>The full size files without the preview mark: the booth loop in landscape and portrait, the four graphics that say where to find you, the email signature banner and the product sheet as a PDF. The files arrive within 24 hours of purchase.</p></details><details><summary>Can you change something?</summary><p>Yes. Reply with any correction (wording, product, photo or booth details) and we will send an updated kit. One round of changes is included.</p></details><details><summary>Where did the content come from?</summary><p>Only the public website of Lantern Coffee Roasters and the public exhibitor list of Sample Expo 2027. Each product above lists the page it came from. Please confirm your booth number and dates before you print.</p></details>
+<h2>Photo credits</h2><p>The photos in this sample are free license photos, listed below with their authors and licenses. They were resized and cropped to fit each layout.</p><ul class="cred"><li>Kraft bag: photo by Vitalii Abakumov, Unsplash License, source page: <span class="src">unsplash.com/photos/brown-paper-pouch-on-white-luNZR9Mcys4</span></li><li>Roasted beans: photo by Mike Kenneally, Unsplash License, source page: <span class="src">unsplash.com/photos/coffee-bean-lot-TD4DBagg2wE</span></li><li>Scoop and sack: photo by Sergey Kotenev, Unsplash License, source page: <span class="src">unsplash.com/photos/a-scoop-full-of-coffee-beans-next-to-a-sack-of-coffee-beans-Qx_S2YE5I1o</span></li><li>Cold brew: photo by Demi DeHerrera, Unsplash License, source page: <span class="src">unsplash.com/photos/glass-cup-filled-with-ice-latte-on-tabletop-L-sm1B4L1Ns</span></li></ul>
+<footer><span>Already Made</span></footer>
+</main></body></html>

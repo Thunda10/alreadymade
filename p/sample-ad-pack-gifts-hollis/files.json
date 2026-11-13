@@ -1,0 +1,229 @@
+{
+  "product": "ad-pack",
+  "brand": "Hollis Clay Studio",
+  "made_up": true,
+  "items": 12,
+  "page": "index.html",
+  "files": [
+    {
+      "file": "index.html",
+      "type": "page"
+    },
+    {
+      "file": "ad-01-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-01-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-01-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-03-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-03-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-03-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-04-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-04-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-04-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-05-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-05-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-05-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-06-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-06-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-06-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-07-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-07-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-07-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-08-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-08-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-08-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-09-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-09-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-09-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-10-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-10-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-10-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-11-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-11-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-11-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "ad-12-1080x1080.jpg",
+      "type": "image",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "file": "ad-12-1080x1350.jpg",
+      "type": "image",
+      "width": 640,
+      "height": 800
+    },
+    {
+      "file": "ad-12-1080x1920.jpg",
+      "type": "image",
+      "width": 450,
+      "height": 800
+    },
+    {
+      "file": "free-ad-1080x1080.jpg",
+      "type": "image",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "file": "free-ad-1080x1350.jpg",
+      "type": "image",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "file": "free-ad-1080x1920.jpg",
+      "type": "image",
+      "width": 1080,
+      "height": 1920
+    }
+  ]
+}

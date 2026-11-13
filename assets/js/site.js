@@ -32,14 +32,18 @@
     });
   });
 
-  /* Contact email, shown only when one is set. */
+  /* Contact email. The page ships an empty, hidden span; the words and the link
+     are built here only when an address is set, so no empty link is ever shown. */
   var email = setting("CONTACT_EMAIL");
   document.querySelectorAll("[data-contact]").forEach(function (wrapper) {
     if (!email) return;
-    wrapper.querySelectorAll("[data-contact-email]").forEach(function (a) {
-      a.href = "mailto:" + email;
-      a.textContent = email;
-    });
+    var a = document.createElement("a");
+    a.setAttribute("data-contact-email", "");
+    a.href = "mailto:" + email;
+    a.textContent = email;
+    wrapper.textContent = wrapper.getAttribute("data-contact") || "";
+    wrapper.appendChild(a);
+    wrapper.appendChild(document.createTextNode(wrapper.getAttribute("data-contact-after") || ""));
     wrapper.hidden = false;
   });
 
@@ -59,6 +63,12 @@
     "reskin": "Next show re-skin",
     "addon": "Added to an Ad Pack",
     "yearly": "Yearly"
+  };
+  // The price a plan costs, by product, so the form never shows the one-pack price for a plan.
+  var PLAN_PRICES = {
+    "ad-pack": { "one": "$149", "monthly": "$129 a month", "weekly": "$449 a month" },
+    "booth-kit": { "addon": "$99", "reskin": "$79" },
+    "sunday-pack": { "monthly": "$79 a month", "yearly": "$790 a year" }
   };
 
   var status = document.getElementById("form-status");
@@ -81,10 +91,19 @@
     form.querySelector('input[name=product][value="' + preselect + '"]').checked = true;
   }
   var plan = params.get("plan");
+  var planPrice = PRODUCTS[preselect] && PLAN_PRICES[preselect] ? PLAN_PRICES[preselect][plan] : "";
+  var priceTag = null, oldPrice = "";
   if (PLANS[plan]) {
     planInput.value = plan;
-    planNote.textContent = "Plan: " + PLANS[plan];
+    planNote.textContent = "Plan: " + PLANS[plan] + (planPrice ? ", " + planPrice : "");
     planNote.hidden = false;
+    if (planPrice) {
+      priceTag = form.querySelector('input[name=product][value="' + preselect + '"] + span small');
+      if (priceTag) {
+        oldPrice = priceTag.textContent;
+        priceTag.textContent = planPrice;
+      }
+    }
   }
 
   function selectedProduct() {
@@ -107,6 +126,10 @@
     // A plan only belongs to the product it was picked for.
     planInput.value = "";
     planNote.hidden = true;
+    if (priceTag) {
+      priceTag.textContent = oldPrice;
+      priceTag = null;
+    }
   });
   syncFields();
 
@@ -121,7 +144,7 @@
 
   if (mode === "closed") {
     submit.disabled = true;
-    showStatus("Requests open shortly.");
+    showStatus('Requests open shortly. <a href="samples.html">Until then, see the samples.</a>');
   }
 
   function collect() {

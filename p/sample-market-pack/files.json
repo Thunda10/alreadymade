@@ -1,0 +1,62 @@
+{
+ "page": "p/sample-market-pack/index.html",
+ "files": [
+  {
+   "file": "logo.png",
+   "type": "logo",
+   "width": 697,
+   "height": 126
+  },
+  {
+   "file": "tablet-loop-1440x1080-preview.mp4",
+   "type": "loop",
+   "width": 960,
+   "height": 720,
+   "codec": "h264",
+   "seconds": 36.0,
+   "fps": 30.0
+  },
+  {
+   "file": "tablet-loop-1440x1080-preview-poster.jpg",
+   "type": "poster",
+   "width": 960,
+   "height": 720
+  },
+  {
+   "file": "find-us-1080x1080-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 720
+  },
+  {
+   "file": "find-us-1080x1350-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 900
+  },
+  {
+   "file": "find-us-1080x1920-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 1280
+  },
+  {
+   "file": "find-us-1200x627-free.png",
+   "type": "image",
+   "width": 1200,
+   "height": 627
+  },
+  {
+   "file": "table-sign-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 932
+  },
+  {
+   "file": "price-list-preview.jpg",
+   "type": "image",
+   "width": 720,
+   "height": 932
+  }
+ ]
+}
