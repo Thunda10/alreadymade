@@ -566,6 +566,7 @@ a.ticket:focus-visible { outline-offset: 6px; }
   color: var(--ink-soft);
   padding: 8px 2px 2px;
 }
+.spread figcaption .clip-note { display: block; margin-top: 4px; font-family: inherit; }
 
 @media (min-width: 760px) {
   .spread { gap: 40px 28px; }
@@ -843,3 +844,10 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 }
 .pack-names li span:last-child { font: 400 .8125rem/1.6 var(--mono); color: var(--ink-soft); white-space: nowrap; }
 .pack-note { font: 400 .8125rem/1.5 var(--mono); margin-top: 14px; }
+
+/* Samples page: one block per sample pack */
+
+.sample-block + .sample-block { margin-top: 72px; padding-top: 40px; border-top: 1px solid var(--rule); }
+.sample-block h3 { font-size: clamp(1.35rem, 1.15rem + .8vw, 1.75rem); margin-bottom: 8px; }
+.sample-note { color: var(--ink-soft); max-width: 40em; margin-bottom: 28px; }
+.sample-link { margin-top: 28px; }
