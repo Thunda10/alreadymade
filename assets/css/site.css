@@ -851,3 +851,14 @@ fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
 .sample-block h3 { font-size: clamp(1.35rem, 1.15rem + .8vw, 1.75rem); margin-bottom: 8px; }
 .sample-note { color: var(--ink-soft); max-width: 40em; margin-bottom: 28px; }
 .sample-link { margin-top: 28px; }
+
+/* Phase 7 */
+
+.footer-legal {
+  margin-top: 10px;
+  font: 400 12.5px/1.5 var(--mono);
+  letter-spacing: .04em;
+  color: #B4AFA4;
+}
+.price-lead { font-weight: 600; margin-bottom: 4px; }
+.formats-note { margin-top: 16px; color: var(--ink-soft); }

@@ -92,9 +92,23 @@
         </ul>
       </nav>
       <p class="footer-small"><span>&copy; 2026 Already Made.</span><span>We work by email only.</span></p>
+      <p class="footer-legal">Already Made is operated by JP Photography LLC, a Pennsylvania limited liability company.<span data-studio-town hidden></span><span data-postal-address hidden></span></p>
     </div>
   </footer>
 
+  <script>
+    // Load the settings and the footer script from the site root found above.
+    (function () {
+      var cfg = document.createElement("script");
+      cfg.src = "config.js";
+      cfg.onload = function () {
+        var js = document.createElement("script");
+        js.src = "assets/js/site.js";
+        document.body.appendChild(js);
+      };
+      document.body.appendChild(cfg);
+    })();
+  </script>
   <script>
     // Keep the skip link on this page despite the base element above.
     document.querySelector(".skip-link").href = location.href.split("#")[0] + "#main";

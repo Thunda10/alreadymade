@@ -19,6 +19,19 @@
     link.rel = "noopener";
   });
 
+  /* Studio town and postal address after the legal name in the footer,
+     shown only when config.js sets them. Read straight from the config so the
+     lowercase setting names work as written. */
+  [["studio_town", "data-studio-town", " Studio in "], ["postal_address", "data-postal-address", " Mailing address: "]].forEach(function (item) {
+    var raw = cfg[item[0]];
+    var value = typeof raw === "string" ? raw.trim().replace(/\.$/, "") : "";
+    if (!value) return;
+    document.querySelectorAll("[" + item[1] + "]").forEach(function (span) {
+      span.textContent = item[2] + value + ".";
+      span.hidden = false;
+    });
+  });
+
   /* Contact email, shown only when one is set. */
   var email = setting("CONTACT_EMAIL");
   document.querySelectorAll("[data-contact]").forEach(function (wrapper) {

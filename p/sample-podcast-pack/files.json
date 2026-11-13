@@ -1,0 +1,78 @@
+{
+  "page": "index.html",
+  "files": [
+    {
+      "file": "artwork.jpg",
+      "kind": "artwork",
+      "width": 360,
+      "height": 360,
+      "bytes": 12334
+    },
+    {
+      "file": "clip-1-poster.jpg",
+      "kind": "poster",
+      "width": 720,
+      "height": 1280,
+      "bytes": 46747
+    },
+    {
+      "file": "clip-1.mp4",
+      "kind": "clip",
+      "width": 1080,
+      "height": 1920,
+      "seconds": 46.3,
+      "bytes": 2293084
+    },
+    {
+      "file": "clip-2-preview.jpg",
+      "kind": "poster",
+      "width": 540,
+      "height": 960,
+      "bytes": 53256
+    },
+    {
+      "file": "clip-2-preview.mp4",
+      "kind": "clip preview (watermarked)",
+      "width": 540,
+      "height": 960,
+      "seconds": 55.1,
+      "bytes": 1323434
+    },
+    {
+      "file": "clip-3-preview.jpg",
+      "kind": "poster",
+      "width": 540,
+      "height": 960,
+      "bytes": 54825
+    },
+    {
+      "file": "clip-3-preview.mp4",
+      "kind": "clip preview (watermarked)",
+      "width": 540,
+      "height": 960,
+      "seconds": 52.2,
+      "bytes": 1298439
+    },
+    {
+      "file": "quote-card-1.jpg",
+      "kind": "quote card",
+      "width": 720,
+      "height": 900,
+      "bytes": 28179
+    },
+    {
+      "file": "quote-card-2.jpg",
+      "kind": "quote card",
+      "width": 720,
+      "height": 900,
+      "bytes": 40844
+    },
+    {
+      "file": "quote-card-3.jpg",
+      "kind": "quote card",
+      "width": 720,
+      "height": 900,
+      "bytes": 35047
+    }
+  ]
+}

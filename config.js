@@ -6,12 +6,17 @@
   BUY_*                 Payment links. Empty means the button reads
                         "Request this" and opens the request page instead.
                         BUY_AD_PACK         $149 one pack
-                        BUY_AD_PACK_MONTHLY $249 a month
-                        BUY_AD_PACK_WEEKLY  $499 a month
+                        BUY_AD_PACK_MONTHLY $129 a month
+                        BUY_AD_PACK_WEEKLY  $449 a month
                         BUY_BOOTH_KIT       $199 on its own
                         BUY_BOOTH_ADDON     $99 added to an Ad Pack
                         BUY_RESKIN          $79 next show
-                        BUY_SUNDAY_PACK     $149 a month (or $1,490 a year)
+                        BUY_SUNDAY_PACK     $79 a month (or $790 a year),
+                                            first four Sundays free
+  studio_town           Optional. The town and state, for example "Town, PA".
+                        Shown in the footer after the legal name.
+  postal_address        Optional. A mailing address, shown in the footer
+                        after the town. Empty shows nothing extra.
   REQUEST_FORM_ACTION   A form endpoint that accepts a normal POST
                         (for example a Google Form "formResponse" URL).
   REQUEST_FORM_FIELDS   Our field names mapped to that form's field ids.
@@ -27,6 +32,9 @@ window.SITE_CONFIG = {
   BUY_BOOTH_ADDON: "",
   BUY_RESKIN: "",
   BUY_SUNDAY_PACK: "",
+
+  studio_town: "",
+  postal_address: "",
 
   REQUEST_FORM_ACTION: "",
   REQUEST_FORM_FIELDS: {

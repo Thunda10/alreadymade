@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Sample Sunday Pack. Already Made</title>
-<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<title>Sample Sunday Pack</title>
 <style>
 :root{--accent:#D6AA5C;--ink:#1d1f24;--muted:#5d6370;--paper:#fbfaf7;--line:#e6e2da;--deep:#18243A}
 *{box-sizing:border-box}
@@ -35,6 +34,8 @@ video{width:100%;border-radius:14px;background:#000;display:block}
 blockquote{margin:0}
 ol{padding-left:22px;margin:0}
 ol li{margin:0 0 10px}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{margin:0 0 10px}
 .card{max-width:420px;width:100%;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.12);display:block}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
 ul.list{list-style:none;padding:0;margin:0}
@@ -46,7 +47,17 @@ ul.list li:before{content:"";position:absolute;left:4px;top:17px;width:12px;heig
 footer{padding:34px 0 60px;color:var(--muted);font-size:15px}
 footer a{color:var(--muted)}
 .credit{font-size:14px;color:var(--muted);margin-top:14px}
-@media (max-width:760px){.free,.cols{grid-template-columns:1fr}.grid2{grid-template-columns:1fr 1fr;gap:12px}header h1{font-size:27px}header img{width:78px;height:78px}}
+header .kind{margin:12px 0 0;font-size:17px;line-height:1.5}
+header .kind+.kind{margin-top:6px;opacity:.85;font-size:15px}
+.offer{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:4px 0 0}
+.offer .price{margin:0;font-size:26px}
+.offer .each{margin:6px 0 0}
+.offer .small{font-size:15px;color:var(--muted);margin:10px 0 0}
+.offer .trial{font-size:16px;font-weight:700;margin:12px 0 0}
+.checked{background:#fff;border-left:4px solid var(--accent);padding:14px 18px;margin:26px 0 0;border-radius:6px}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cards3 img{width:100%;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.12);display:block}
+@media (max-width:760px){.free,.cols,.cards3{grid-template-columns:1fr}header{padding:24px 0 22px}section{padding:28px 0}header .who{display:block}header .kind{font-size:16px}.free video{max-width:270px;margin:0 auto}.free{gap:20px}.note{font-size:19px}.grid2{grid-template-columns:1fr 1fr;gap:12px}header h1{font-size:27px}header img{width:64px;height:64px;margin-bottom:12px}}
 </style>
 </head>
 <body>
@@ -54,8 +65,9 @@ footer a{color:var(--muted)}
 <img src="artwork.jpg" alt="Sample Sunday Pack">
 <div><p class="church">Sample Sunday Pack</p>
 <h1>This is what a Sunday Pack looks like.</h1>
-<p class="msg">A sample made from a public domain recording</p>
-<p class="msg">“A Present Religion”, C. H. Spurgeon, May 30, 1858</p></div>
+<p class="kind">These are audio clips with captions over the sermon artwork, because this sample was made from an audio recording. When you share a video link, your clips show your speaker.</p><p class="kind">Audio packs come from your podcast feed, the same audio you already publish. For video packs, you either share a video link with your permission or use an upload link we send you.</p>
+<p class="msg">“A Present Religion”, C. H. Spurgeon, May 30, 1858</p>
+</div>
 </div></header>
 <main class="wrap">
 <section><div class="free">
@@ -63,34 +75,35 @@ footer a{color:var(--muted)}
 <div><span class="tag">Clip 1, full quality</span>
 <p class="note">Every pack starts with three clips like this one.</p>
 <p class="lead">Seek Christ first, and happiness comes after</p>
-<p><strong>Suggested caption:</strong><br>Spurgeon said he never knew a Christian who regretted giving their life to Christ, not in sickness, not in poverty, not even in seasons of doubt. So do not chase happiness on its own. Seek Christ first, and the joy follows. #Faith #SeekFirst</p>
+<div class="offer" id="start">
+<p class="price">Sunday Pack, $79 a month</p>
+<p class="each">Every Monday: 3 captioned clips, 3 quote cards, a 150 word summary, a 5 question small-group guide and a caption for every clip.</p>
+<p class="trial">Your first four Sundays are free, and we don&#x27;t ask for a card.</p><p class="small">After that it&#x27;s $79 a month, or $790 a year, by card or by invoice. Cancel anytime.</p>
+<a class="btn" href="../../request.html?product=sunday-pack">Request the Sunday Pack, $79 a month</a>
+<p class="small">This is a sample, so the button opens our request form with the Sunday Pack chosen.</p>
+</div>
+<p style="margin-top:22px"><strong>Suggested caption:</strong><br>Spurgeon said he never knew a Christian who regretted giving their life to Christ, not in sickness, not in poverty, not even in seasons of doubt. So do not chase happiness on its own. Seek Christ first, and the joy follows. #Faith #SeekFirst</p>
 <a class="dl" href="clip-1.mp4" download="clip-1.mp4">Download clip 1</a>
-<p class="credit">Sample made from a public domain recording of “A Present Religion” by C. H. Spurgeon (1834 to 1892), read by a LibriVox volunteer. Cut and captioned by Already Made. LibriVox and its volunteers do not endorse this studio.</p>
+<p class="credit">Audio: A Present Religion by C. H. Spurgeon (1834-1892), read by a LibriVox volunteer, public domain. Cut and captioned by Already Made. LibriVox and its volunteers do not endorse this studio.</p>
 </div></div></section>
 <section><h2>Two more from the same message</h2>
 <p class="lead">Each pack has three clips, chosen so each one stands on its own.</p>
-<div class="grid2"><figure style="margin:0"><video controls playsinline preload="none" poster="clip-2-preview.jpg" src="clip-2-preview.mp4"></video><p class="hook">There are no enemies in heaven to forgive</p><p class="cap">Preview. The full clip comes with your pack.</p></figure><figure style="margin:0"><video controls playsinline preload="none" poster="clip-3-preview.jpg" src="clip-3-preview.mp4"></video><p class="hook">You are as much God&#x27;s child right now</p><p class="cap">Preview. The full clip comes with your pack.</p></figure></div></section>
+<div class="grid2"><figure style="margin:0"><video controls playsinline preload="none" poster="clip-2-preview.jpg" src="clip-2-preview.mp4"></video><p class="hook">There are no enemies in heaven to forgive</p><p class="cap">Preview. The full clip comes with your pack.</p><p class="cap"><strong>Suggested caption:</strong> Loving our enemies, forgiving, giving, visiting the sick. None of this can wait for heaven, because heaven will have no one who needs it. The people God has given you to love are here, this week. #LoveYourNeighbor #Faith</p></figure><figure style="margin:0"><video controls playsinline preload="none" poster="clip-3-preview.jpg" src="clip-3-preview.mp4"></video><p class="hook">You are as much God&#x27;s child right now</p><p class="cap">Preview. The full clip comes with your pack.</p><p class="cap"><strong>Suggested caption:</strong> If you trust in Christ, you will never be more his child than you are today. Heaven will bring more joy and more holiness, but not more belonging. You are already his. #Grace #ChildOfGod</p></figure></div>
+<p class="checked">Before this page was made, every clip passed our checks: its captions match our transcript of the recording word for word, the captions keep time with the speech, and the sound is set to an even level. Each quote graphic was checked word for word against the same transcript. We never post anything. Your team approves each piece and posts it.</p></section>
 <section class="cols">
 <div><h2>Summary</h2><p>Preaching on 1 John 3:2, “Beloved, now are we the sons of God,” C. H. Spurgeon puts his weight on one word: now. People keep faith at a distance, the way they keep war and death at a distance, hoping to be saved at last. But the Bible speaks of its blessings in the present tense. A believer is already forgiven, already justified, already a child of God, and will be no more a child of God in heaven than today. Faith and hope can only be exercised here, and so can its duties: loving enemies, forgiving, giving and visiting the sick, since heaven has no one who needs them. Against the idea that faith is gloomy, he points to believers who found it a light in poverty, sickness and toil, and says he never knew a Christian who regretted it. Seek Christ first, he urges, and happiness will follow.</p></div>
-<div><h2>For small groups</h2><p class="lead">The first three of five discussion questions:</p><ol><li>Spurgeon says people keep faith at a distance and plan to deal with it later. Where are you tempted to say “someday” to God?</li><li>Scripture speaks of forgiveness, peace and adoption in the present tense. Which of these is hardest for you to believe is yours today?</li><li>What changes for you when you know you will be no more God&#x27;s child in heaven than you are right now?</li></ol></div>
+<div><h2>For small groups</h2><p class="lead">The 5 discussion questions that come with this message:</p><ol><li>Spurgeon says people keep faith at a distance and plan to deal with it later. Where are you tempted to say “someday” to God?</li><li>Scripture speaks of forgiveness, peace and adoption in the present tense. Which of these is hardest for you to believe is yours today?</li><li>What changes for you when you know you will be no more God&#x27;s child in heaven than you are right now?</li><li>Loving enemies, forgiving, giving and visiting the sick can only be done in this life. Which of these is in front of you this week?</li><li>Spurgeon never knew a Christian who regretted following Christ. When has your faith been a light to you in a hard season?</li></ol></div>
 </section>
-<section><h2>A quote card</h2><img class="card" src="quote-card.jpg" alt="Quote card: He forgives those who cannot forgive themselves."></section>
+<section><h2>Three quote cards</h2><div class="cards3"><figure style="margin:0"><img src="quote-card-1.jpg" alt="A quote card: He forgives those who cannot forgive themselves."></figure><figure style="margin:0"><img src="quote-card-2.jpg" alt="A quote card: Seek Christ first, and happiness shall come after."></figure><figure style="margin:0"><img src="quote-card-3.jpg" alt="A quote card: I shall not be one whit more a child of God than I am now."></figure></div></section>
 <section class="cols">
 <div><h2>What arrives every Monday</h2><ul class="list">
-<li>3 vertical clips with captions, ready for Reels, Shorts and TikTok</li>
-<li>3 quote cards for Instagram and Facebook</li>
-<li>A 150 word summary for the bulletin, newsletter or website</li>
-<li>A 5 question discussion guide for small groups</li>
-<li>A caption for every clip, ready to paste</li>
+<li>3 vertical clips with captions, ready for Reels, Shorts and TikTok</li><li>3 quote cards for Instagram and Facebook</li><li>A 150 word summary for the bulletin, newsletter or website</li><li>A 5 question discussion guide for small groups</li><li>A ready-to-paste caption for every clip</li>
 </ul></div>
-<div><h2>Sunday Pack</h2>
-<p class="price">$149 a month</p><p class="lead">Or $1,490 a year. Cancel anytime.</p>
-<a class="btn" href="../../request.html?product=sunday-pack">Request yours</a>
-<h2 style="margin-top:34px">How we get the sermon each week</h2>
-<p>Audio packs come from your podcast feed, the same audio you already publish. For video packs, you either share a video link with your permission or use an upload link we send you.</p>
-<p><strong>Nothing is ever posted by us.</strong> The pack lands in your inbox, and you decide what to share and when.</p>
+<div><h2>How we get the sermon each week</h2>
+<p>Every Monday we take the newest message from your public podcast feed, or from the video link you share, and send the pack to your inbox.</p>
 </div></section>
+<section><h2>About this sample</h2><p>This sample was made from a public domain recording. It is not a client&#x27;s sermon.</p></section>
 </main>
-<footer class="wrap">Already Made. This sample was made from a public domain recording. <a href="../../sunday-pack.html">Back to the Sunday Pack</a></footer>
+<footer class="wrap">Already Made. A sample made from a public domain recording.</footer>
 </body>
 </html>
